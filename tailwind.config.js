@@ -38,7 +38,10 @@ module.exports = {
       black2: '#080808',
       black3: '#0f0f0f',
       black4: '#171717',
-      black5: '#1f1f1f'  
+      black5: '#1f1f1f',      
+      bluetop: '#448FDE',
+      bluemain: '#56A1F1',  
+      blackmain: '#262626',
     },
     spacing: {
       px: "1px",
@@ -174,7 +177,7 @@ module.exports = {
     divideWidth: (theme) => theme("borderWidth"),
     dropShadow: {
       "blue": "0 3px 8px 3px rgba(22, 133, 228, 0.4)"
-    },
+    },   
     fill: { current: "currentColor" },
     flex: {
       1: "1 1 0%",
@@ -226,6 +229,8 @@ module.exports = {
         "monospace",
       ],
       rajdhani: ['rajdhani', 'sans-serif'],
+      monument: ['monument-extended', 'sans-serif'],
+      inter: ['inter', 'sens-serif'],     
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -497,6 +502,7 @@ module.exports = {
       0: "0rem",
       "104": "6.5rem",
       "256": "16rem",
+      "px570": "35.625rem",
       xs: "20rem",
       sm: "24rem",
       md: "28rem",
@@ -749,7 +755,7 @@ module.exports = {
       full: "100%",
       screen: "100vw",
       min: "min-content",
-      max: "max-content",
+      max: "max-content",      
     }),
     zIndex: {
       auto: "auto",
