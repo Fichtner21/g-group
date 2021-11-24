@@ -1,4 +1,4 @@
-$main: rgba(22,133,228,0.4);
+$main: #56A1F1;
 
 html { 
   scroll-behavior: smooth; 
@@ -111,3 +111,44 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 3rem 10fr 2fr;
 }
+
+.top-img {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    background-color: $main;
+    top: 3rem;
+    right: 0;
+    bottom: 9rem;
+    z-index: 2;
+  }
+}
+
+.bottom-img {
+  &:before {
+    content: '';
+    position: absolute;
+    height: 3rem;
+    background-color: $main;
+    z-index: 2;
+    bottom: 0;
+    left: 9rem;
+    right: 9rem;
+  }
+}
+
+
+
