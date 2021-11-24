@@ -1,0 +1,44 @@
+$main: rgba(22,133,228,0.4);
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  transition: all .3s;
+}
+
+.code10img {
+  background-image: url(../images/code10.png);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.text-neon {
+  text-shadow: 0.0625rem 0.0625rem 2rem #1685e4;
+}
+
+.drop-blueshadow {
+  filter: drop-shadow(0px 5px 16px $main);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.active {
+  transition: all .3s;
+  color: #1685e4;
+}
