@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="51px" viewBox="0 0 61 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>913CB6D9-F897-456B-9E3A-B84250DDD482</title>
+    <defs>
+        <linearGradient x1="0%" y1="86.125%" x2="100%" y2="13.875%" id="linearGradient-1">
+            <stop stop-color="#448FDE" offset="0%"></stop>
+            <stop stop-color="#56A1F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing" transform="translate(-752.000000, -1341.000000)" fill="url(#linearGradient-1)">
+            <g id="how-can-we-help" transform="translate(0.000000, 1074.000000)">
+                <g id="icon2" transform="translate(752.400000, 267.000000)">
+                    <path d="M60,15 L60,39 L48,39 L48,51 L36,51 L36,27 L48,27 L48,15 L60,15 Z M0,27 L12,27 L12,15 L24,15 L24,39 L12,39 L12,51 L0,51 L0,27 Z M54,0 L54,12 L42,12 L42,0 L54,0 Z M18,0 L18,12 L6,12 L6,0 L18,0 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

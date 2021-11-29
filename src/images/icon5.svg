@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BC3A848F-CADD-412F-87CE-93D902596725</title>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#448FDE" offset="0%"></stop>
+            <stop stop-color="#56A1F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing" transform="translate(-1456.000000, -1341.000000)" fill="url(#linearGradient-1)">
+            <g id="how-can-we-help" transform="translate(0.000000, 1074.000000)">
+                <path d="M1497.87629,300.352584 L1506.2,308.676292 L1497.87629,317 L1489.55258,308.676292 L1497.87629,300.352584 Z M1497.87629,283.676292 L1506.2,292 L1497.87629,300.323708 L1489.55258,292 L1497.87629,283.676292 Z M1481.2,283.676292 L1489.52371,292 L1481.2,300.323708 L1472.87629,292 L1481.2,283.676292 Z M1497.87629,267 L1506.2,275.323708 L1497.87629,283.647416 L1489.55258,275.323708 L1497.87629,267 Z M1481.2,267 L1489.52371,275.323708 L1481.2,283.647416 L1472.87629,275.323708 L1481.2,267 Z M1464.52371,267 L1472.84742,275.323708 L1464.52371,283.647416 L1456.2,275.323708 L1464.52371,267 Z" id="icon5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

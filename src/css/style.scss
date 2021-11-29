@@ -32,8 +32,11 @@ body {
 
 .fixed-menu {
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   animation: smoothScroll 1s forwards;
+  transition: all .3s;  
 }
 
 @keyframes smoothScroll {
@@ -150,5 +153,25 @@ body {
   }
 }
 
+.grid-156 {
+  display: grid;
+  grid-template-columns: 9.75rem 1fr 1fr;
+  grid-template-rows: auto;
+}
 
+.write-mode {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
 
+// @font-face {
+//   font-family: 'MonumentExtended-Regular';
+//   src: url("../fonts/MonumentExtended-Regular.otf") format("opentype");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// } 
+
+// .mon {
+//   font-family: 'MonumentExtended-Regular', sans-serif;
+// }

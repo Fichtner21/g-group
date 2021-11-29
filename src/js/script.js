@@ -41,11 +41,13 @@ const header = document.getElementById('header-menu');
 function addClassHeader() {
   header.classList.add("fixed-menu");
   header.classList.remove("relative");  
+  console.log('height add:', header.offsetHeight);
 }
 
 function removeClassHeader(){
   header.classList.remove("fixed-menu");
-  header.classList.add("relative");  
+  header.classList.add("relative");    
+  console.log('height remove:', header.offsetHeight);
 }
 
 window.addEventListener('scroll', function(){
