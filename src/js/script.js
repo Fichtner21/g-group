@@ -85,3 +85,37 @@ $(document).ready(function () {
     });
   });
 });
+
+const dateDiv = document.getElementById("date");
+dateDiv.innerHTML = new Date().toLocaleTimeString('en-US', { hour12: true, hour: 'numeric', minute: 'numeric'}) + ' GMT+2';
+const dayDiv = document.getElementById("day");
+var myDate = new Date();
+var hrs = myDate.getHours();
+console.log('part', hrs);
+console.log('parse', Date.parse(hrs));
+if(hrs < 6 || hrs > 17){
+  dayDiv.innerHTML = '<i class="fas fa-moon"></i>';
+} else {
+  dayDiv.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+// API google => AIzaSyD0gEk5ngA09DhJ1nPMEvW9rQHQ5MlSrhM
+
+//  CHOINKA //
+
+// document.addEventListener('keydown', logKey);
+// let a = 0;
+// const place = document.getElementById('place');
+
+// function logKey(e) {
+//   place.textContent += ` ${e.code}`;
+//  let b = ++a;
+//     if(b > 10){
+//         console.log('b jest wieksze niz 10'); 
+//     } else {
+//         console.log('b jest mniejsze niz 10'); 
+//     }
+//     if(e.which == '13'){
+//         console.log('ENTER !!');
+//     }
+// }

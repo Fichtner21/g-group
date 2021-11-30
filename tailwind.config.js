@@ -412,6 +412,9 @@ module.exports = {
       full: "100%",
       screen: "100vh",
       "285px": "17.8125rem",
+      "30px": "1.875rem",
+      "140px": "8.75rem",
+      "100px": "6.3rem",
     }),
     inset: (theme, { negative }) => ({
       auto: "auto",
@@ -430,7 +433,7 @@ module.exports = {
       "-1/4": "-25%",
       "-2/4": "-50%",
       "-3/4": "-75%",
-      "-full": "-100%",     
+      "-full": "-100%",         
     }),
     keyframes: {
       spin: {
@@ -759,7 +762,8 @@ module.exports = {
       full: "100%",
       screen: "100vw",
       min: "min-content",
-      max: "max-content",      
+      max: "max-content",  
+      "30px": "1.875rem",    
     }),
     zIndex: {
       auto: "auto",
