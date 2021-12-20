@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="60px" viewBox="0 0 40 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CD8FCE9F-EE2A-4683-AB51-C937128A3DF6</title>
+    <defs>
+        <linearGradient x1="27.7777778%" y1="100%" x2="72.2222222%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#448FDE" offset="0%"></stop>
+            <stop stop-color="#56A1F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing" transform="translate(-940.000000, -6904.000000)">
+            <g id="map" transform="translate(0.000000, 6729.000000)">
+                <g id="pin" transform="translate(940.000000, 175.000000)">
+                    <path d="M0,0 L40,0 L40,40 L20,40 L0,60 L0,0 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M19.392,21.848039 L25.656,21.848039 C25.56,23.120039 23.88,24.944039 19.704,24.944039 C14.112,24.944039 13.32,21.776039 13.32,19.735999 C13.32,17.719999 14.088,14.623999 19.704,14.623999 C24.264,14.623999 25.416,16.519999 25.656,17.791999 L30.048,17.791999 C29.784,13.615999 26.424,11 19.704,11 C12.792,11 9,14.071999 9,19.639999 C9,25.208039 12.792,28.280039 18.984,28.280039 C22.56,28.280039 25.08,27.128039 26.664,25.400039 L26.856,28.040039 L30.048,28.040039 L30.048,19.039999 L19.392,19.039999 L19.392,21.848039 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

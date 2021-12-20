@@ -8,6 +8,12 @@ body {
   transition: all .3s;
 }
 
+.container {
+  @media screen and (min-width: 1700px){
+    margin: 0 auto;
+  }
+}
+
 .code10img {
   background-image: url(../images/code10.png);
   width: 100%;
@@ -274,6 +280,10 @@ body {
 .write-mode {
   writing-mode: tb-rl;
   transform: rotate(-180deg);
+}
+
+#map {
+  @apply h-410px;
 }
 
 // @font-face {

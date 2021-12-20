@@ -415,6 +415,7 @@ module.exports = {
       "30px": "1.875rem",
       "140px": "8.75rem",
       "100px": "6.3rem",
+      "410px": "25.625rem",
     }),
     inset: (theme, { negative }) => ({
       auto: "auto",
