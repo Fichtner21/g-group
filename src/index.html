@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter Webpack-Tailwind-SCSS</title>
+    <title>G-GROUP.dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <!-- <link href="http://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet"> -->   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0gEk5ngA09DhJ1nPMEvW9rQHQ5MlSrhM&callback=initMap">
@@ -22,10 +21,10 @@
         <div class="text-sm text-white ml-4">SITE UNDER CONSTRUCTION</div>
       </div>
     </section>
-    <section class="bg-white" >          
-      <nav class="mx-auto px-8 relative z-20 bg-white" id="header-menu"> 
-        <div class="container">
-          <div class="flex justify-between py-7">          
+    <section class="bg-white">
+      <div class="container mx-auto pr-8">
+        <nav class="mx-auto px-8 relative z-20 bg-white" id="header-menu">          
+          <div id="header-under" class="flex justify-between py-7 transition-all transform duration-300">          
             <div>
               <!-- Website Logo -->
               <a href="#" class="flex items-center py-4">
@@ -56,24 +55,21 @@
               </a>
             </div>
             <!-- Primary Navbar items -->
-            <ul class="hidden lg:flex items-center">  
-              <li class="ml-12">
-                <a href="#section_what" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">What's in if for me?</a>
+            <ul class="hidden lg:flex items-center font-inter">  
+              <li class="transition-all transform duration-300 border-transparent border-b-2 hover:border-bluemain ml-12">
+                <a href="#section_what" class="link text-black antialiased text-lg">Our Services</a>
               </li>
-              <li class="ml-6">
-                <a href="#section_how" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">How it works?</a>
+              <li class="transition-all transform duration-300 border-transparent border-b-2 hover:border-bluemain ml-12">
+                <a href="#section_how" class="link text-black antialiased text-lg">Case Studies</a>
               </li>
-              <li class="ml-6">
-                <a href="#section_stack" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">Technology stack</a>
+              <li class="transition-all transform duration-300 border-transparent border-b-2 hover:border-bluemain ml-12">
+                <a href="#section_stack" class="link text-black antialiased text-lg">About us</a>
               </li>
-              <li class="ml-6">
-                <a href="#section_pricing" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">Pricing</a>
-              </li>
-              <li class="ml-6">
-                <a href="#section_security" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">Security</a>
-              </li>
-              <li class="ml-6">
-                <a href="#section_contact" class="link text-blasck antialiased text-lg hover:border-b border-mainblue transition duration-300">Contact</a>
+              <li class="transition-all transform duration-300 border-transparent border-b-2 hover:border-bluemain ml-12">
+                <a href="#section_pricing" class="link text-black antialiased text-lg">Team Leasing</a>
+              </li>                
+              <li class="transition-all transform duration-300 border-transparent border-b-2 hover:border-bluemain ml-12">
+                <a href="#section_contact" class="link text-black antialiased text-lg">Contact</a>
               </li>                  
             </ul>                  
             <!-- Mobile menu button -->
@@ -120,14 +116,13 @@
                 </a>
               </li>            
             </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="container mx-auto px-8 relative pb-28">
-        <!-- <div id="top-section"></div> -->
+          </div>          
+        </nav>
+      </div>
+      <div class="container mx-auto px-8 relative pb-28">        
         <div class="relative top-img">
           <img src="./images/img1.jpg" class="min-w-full">
-          <div class="bg-white absolute bottom-12 -left-12 p-20 xl:max-w-px570">
+          <div class="bg-white absolute bottom-12 left-0 py-20 pr-20 xl:max-w-px500 font-inter">
             <div class="flex mb-8">
               <div class="bg-blackmain w-5 h-2"></div>
               <div class="bg-bluemain w-5 h-2"></div>
@@ -138,6 +133,12 @@
             <div class="text-xl mb-8">
               We are here to create tailor-made digital solutions for your business.
             </div>
+           
+            <a href="" class="flex group">
+              <div class="bg-gradient-to-b from-lightblackbtn to-darkblackbtn text-white w-44 h-12 flex items-center pl-4">HIRE US</div>
+              <div class="text-white bg-bluemain flex items-center justify-center w-12 h-12"><i class="fas fa-arrow-right transition-all duration-300 transform group-hover:translate-x-1"></i></div>
+            </a>
+            
           </div>
           <div class="absolute right-12 top-0 grid grid-cols-2">
             <div class="w-12 h-12 bg-bluemain" data-aos="fade-up" data-aos-delay="100"></div>
@@ -449,20 +450,20 @@
           <div class="bottom-img-right"></div>               
         </div>
         <div class="grid grid-cols-3 mb-48">
-          <div>
+          <div data-aos="fade-right">
             <div class="mb-6">
               <div class="bg-bluemain h-30px w-30px"></div>
             </div>
             <div>We care about our<br> clients and our team.</div>
           </div>
-          <div class="text-center">
+          <div class="text-center" data-aos="fade-right" data-aos-delay="300">
             <div class="flex justify-center mb-6">
               <div class="bg-bluemain h-30px w-30px"></div>
               <div class="bg-bluemain h-30px w-30px ml-8"></div>
             </div>
             <div>We are flexible, cost-conscious<br> and ambitious.</div>
           </div>
-          <div class="">
+          <div class="" data-aos="fade-right" data-aos-delay="600">
             <div class="flex justify-end mb-6">
               <div class="bg-bluemain h-30px w-30px"></div>
               <div class="bg-bluemain h-30px w-30px ml-8"></div>
@@ -622,7 +623,7 @@
             <h3 class="font-monument text-white text-2xl mb-6">G-GROUP</h3>
             <div class="text-white">© Globe Group 2021. All rights reserved.</div>
             <a href="/" class="text-bluemain hover:underline">Privacy Policy</a>
-            <div class="flex py-4">
+            <div class="flex pt-12">
               <div class="text-2xl text-white text-opacity-80">
                 <a href="/">
                   <i class="fab fa-facebook-f"></i>

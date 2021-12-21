@@ -12,10 +12,12 @@ import "../css/style.scss";
 
 import { Loader } from "@googlemaps/js-api-loader";
 
+// animation
 AOS.init({
   once: true
 });
 
+// smooth scroll 
 const links = document.querySelectorAll(".link");
 
 for (const link of links) {
@@ -37,24 +39,28 @@ btn.addEventListener("click", () => {
 });
 
 // sticky menu desktop
-
 const header = document.getElementById('header-menu');
+const headerUnder = document.getElementById('header-under');
 
 function addClassHeader() {
   header.classList.add("fixed-menu");
   header.classList.remove("relative");    
   header.parentNode.style.marginTop = `${header.offsetHeight}px`;
+  headerUnder.classList.add('mx-auto', 'px-8');
+  headerUnder.classList.remove('pr-8');  
 }
 
 function removeClassHeader(){
   header.classList.remove("fixed-menu");
   header.classList.add("relative");   
   header.parentNode.style.marginTop = 0;
+  headerUnder.classList.remove('mx-auto', 'px-8');
+  headerUnder.classList.add('pr-8');
 }
 
 window.addEventListener('scroll', function(){
   let getScrollposition = window.scrollY;
-  const mediaQuery = window.matchMedia('(min-width: 1024px)');
+  const mediaQuery = window.matchMedia('(min-width: 1px)');
 
   if(mediaQuery.matches){
     if(getScrollposition > 50){
@@ -65,6 +71,7 @@ window.addEventListener('scroll', function(){
   }   
 });
 
+// highlight sections
 $(document).ready(function () {
   $(window).scroll(function (e) {
     // Our logic here
@@ -87,6 +94,7 @@ $(document).ready(function () {
   });
 });
 
+// footer date
 const dateDiv = document.getElementById("date");
 dateDiv.innerHTML = new Date().toLocaleTimeString('en-US', { hour12: true, hour: 'numeric', minute: 'numeric'}) + ' GMT+2';
 const dayDiv = document.getElementById("day");
@@ -98,35 +106,17 @@ if(hrs < 6 || hrs > 17){
   dayDiv.innerHTML = '<i class="fas fa-sun"></i>';
 }
 
+// google maps
 // API google => AIzaSyD0gEk5ngA09DhJ1nPMEvW9rQHQ5MlSrhM
 
 var map;
-
-// google.maps.event.addDomListener(window, "load", function () {
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: 52.40688, lng: 16.92086},
-//     zoom: 16
-//   });
-
- 
-// });
 
 const loader = new Loader({
   apiKey: "AIzaSyD0gEk5ngA09DhJ1nPMEvW9rQHQ5MlSrhM",
   version: "weekly",
 });
 
-
-
 loader.load().then(() => {
-  // map = new google.maps.Map(document.getElementById("map"), {
-  //   center: { lat: 52.40688, lng: 16.92086 },
-  //   zoom: 16,
-    
-  // });
-
-  // console.log('MAP', map)
-
   const center = new google.maps.LatLng(52.40750, 16.92086);
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
@@ -152,32 +142,5 @@ loader.load().then(() => {
     position: map.getCenter(),
     icon: svgMarker,
     map: map,   
-  });
-
-  // const iconBase = "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
-  // const iconBase = location.href + "src/images/";
-
-  // const icons = {
-  //   info: {
-  //     // icon: iconBase + "info-i_maps.png",
-  //     icon: iconBase + "skoda.png",
-  //   },
-  // }
-
-  // console.log('icons link =>', icons);
-
-  // const features = [
-  //   {
-  //     position: new google.maps.LatLng(52.40688, 16.92086),
-  //     type: "info",
-  //   },
-  // ];
-
-  // for (let i = 0; i < features.length; i++) {
-  //   const marker = new google.maps.Marker({
-  //     position: features[i].position,
-  //     icon: icons[features[i].type].icon,
-  //     map: map,
-  //   });
-  // }
+  }); 
 });
